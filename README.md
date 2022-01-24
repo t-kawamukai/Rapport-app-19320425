@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Usersテーブル
+| Column             | Type    | Options                   |
+| ------------------ | ------- | ------------------------- |
+| family_name        | string  | null: false               |
+| fast_name          | string  | null: false               |
+| email              | string  | null: false, unique: true |
+| encrypted_password | string  | null: false               |
+| authority_id       | integer | null: false               |
+| birthday           | date    | null: false               |
+| sex_id             | integer | null: false               |
+| tell               | string  | null: false               |
 
-Things you may want to cover:
+### association
 
-* Ruby version
+## topsテーブル
 
-* System dependencies
+## roomsテーブル
 
-* Configuration
+## room_usersテーブル
 
-* Database creation
+## schedulesテーブル
 
-* Database initialization
+## care_recordsテーブル
 
-* How to run the test suite
+## care_roomsテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+## noticesテーブル
 
-* Deployment instructions
+## diariesテーブル
 
-* ...
+## volunteer_recruitmentテーブル
